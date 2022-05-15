@@ -12,7 +12,7 @@
 # check for root privileges
 #
 if [[ $EUID != 0 ]]; then
-	echo "This tool requires root privileges. Try again with \"sudo \" please ..." >&2
+	echo "hibian-config需要root权限，请使用sudo命令执行" >&2
 	sleep 2
 	exit 1
 fi
